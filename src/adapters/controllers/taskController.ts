@@ -28,7 +28,7 @@ export class TaskController {
 
     static async deleteTask(req: Request, res: Response) {
         await taskService.deleteTask(req.params.id);
-        res.status(204).send();
+        res.status(200).send('Task deleted');
     }
 
     static async updateTaskStatus(req: Request, res: Response) {
