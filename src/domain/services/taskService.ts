@@ -25,7 +25,6 @@ export class TaskService{
         const task = await this.taskRepository.findById(id);
         if (task) {
             task.completed = !task.completed;
-            await this.taskRepository.save(task);
         }
     }
 }

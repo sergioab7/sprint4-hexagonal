@@ -42,7 +42,7 @@ class TaskController {
     static deleteTask(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             yield taskService.deleteTask(req.params.id);
-            res.status(204).send();
+            res.status(200).send('Task deleted');
         });
     }
     static updateTaskStatus(req, res) {

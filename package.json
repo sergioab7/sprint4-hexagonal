@@ -5,7 +5,8 @@
   "main": "./src/dist/infrastructure/server.js",
   "scripts": {
     "dev": "nodemon ./src/dist/infrastructure/server.js",
-    "start": "node ./src/dist/infrastructure/server.js"
+    "start": "node ./src/dist/infrastructure/server.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

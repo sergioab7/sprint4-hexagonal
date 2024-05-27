@@ -41,7 +41,6 @@ class TaskService {
             const task = yield this.taskRepository.findById(id);
             if (task) {
                 task.completed = !task.completed;
-                yield this.taskRepository.save(task);
             }
         });
     }
